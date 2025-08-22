@@ -1,0 +1,27 @@
+version: "3.9"
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: credit_intel/docker/backend.Dockerfile
+    container_name: credit-intel-backend
+    environment:
+      - DATABASE_URL=sqlite:////data/credit_intel.db
+      - DATA_REFRESH_MINUTES=60
+    volumes:
+      - ./data:/data
+      - ./model_store:/app/model_store
+    ports:
+      - "8000:8000"
+
+  dashboard:
+    build:
+      context: .
+      dockerfile: credit_intel/docker/dashboard.Dockerfile
+    container_name: credit-intel-dashboard
+    environment:
+      - API_BASE=http://backend:8000
+    ports:
+      - "8501:8501"
+    depends_on:
+      - backend

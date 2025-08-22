@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+credit_intel.egg-info/PKG-INFO
+credit_intel.egg-info/SOURCES.txt
+credit_intel.egg-info/dependency_links.txt
+credit_intel.egg-info/requires.txt
+credit_intel.egg-info/top_level.txt
