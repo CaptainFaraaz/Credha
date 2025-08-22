@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: credit-intel
+Version: 0.1.0
+Summary: Real-Time Explainable Credit Intelligence Platform
+Author: Your Name
+Requires-Python: >=3.10
+Requires-Dist: fastapi>=0.111
+Requires-Dist: uvicorn[standard]>=0.30
+Requires-Dist: pydantic>=2.8
+Requires-Dist: pandas>=2.2
+Requires-Dist: numpy>=1.26
+Requires-Dist: scikit-learn>=1.5
+Requires-Dist: yfinance>=0.2.40
+Requires-Dist: requests>=2.32
+Requires-Dist: feedparser>=6.0
+Requires-Dist: vaderSentiment>=3.3.2
+Requires-Dist: jinja2>=3.1
+Requires-Dist: sqlalchemy>=2.0
+Requires-Dist: alembic>=1.13
+Requires-Dist: apscheduler>=3.10
+Requires-Dist: python-multipart>=0.0.9
+Requires-Dist: tenacity>=8.3
+Requires-Dist: orjson>=3.10
+Requires-Dist: plotly>=5.23
+Requires-Dist: streamlit>=1.37
